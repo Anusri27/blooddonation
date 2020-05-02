@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="./fontawesome-free-5.12.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-5.12.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.12.1-web/css/solid.css" rel="stylesheet"> 
+    <link href="/fontawesome-free-5.12.1-web/css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="mainNav"  >
+      <div class="container" style="margin-left: 20px;">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="margin-left: 0px;">
+          <img src="bp.png" width="40" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about" >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#don">Look For Donors</a>
+            </li>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#bb">Nearby Blood Banks</a>
+              </li>            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#becdon">Become A donor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <body>
+    
+
+<section id="about">   
+<div class="jumbotron jumbotron-fluid" style="background-color:white;margin-bottom: 0px;">
+    <div class="container" style="margin-top :50px">
+        <p class="display-4" style="font-size: 40px; font-weight: bold ;text-align: center; font-family: 'Times New Roman', Times, serif;">B+ve Oranisation</h2>
+        <p class="lead" style="font-family:'Times New Roman', Times, serif; font-size: large; text-align: center; margin:25px">Our organisation is an address which can save your life. From the most common blood group to the rarest, the site has a huge database of blood donors. So if you need blood, it's a good place to turn to. It's simple. It's effective. It's Free. It can match you with a donor near you in minutes. And you can save the life of a loved one. You can also Sign up as a donor at the site and save the life of someone else's loved one. Pass the message and let's build a community that cares ! </p>
+        <div class="container" >
+            <div class="text-center" style="margin-top:30px;">
+            <button type="button" style="background-color: #e24d4d;  border: 1px solid rgb(248, 36, 36);"class="btn btn-info btn-md" data-toggle="modal" data-target="#contact">Contact Us</button>
+            <div id="contact" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-contact">
+            
+                <!-- Modal content-->
+                <div class="modal-content">
+                    </div>
+                    
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body"style="background-color:white; border-radius:8px 8px 8px 8px;padding:0px;width:350px;margin-left:500px">
+                    <ul style="list-style: none;display: inline-block;">
+                      <li style="display: inline-block;"><a href="#"class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="https://www.facebook.com"><i class="fab fa-facebook"></i>  </a></li>
+                      <li style="display: inline-block;"><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="https://www.twitter.com"> <i class="fab fa-twitter" style="color: #e24d4d;"> </i> </a></li>
+                      <li style="display: inline-block;"><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="tel:+91-8765433980"> <i class="fab fa-whatsapp" style="color: #e24d4d;"></i> </a></li>
+                      <li style="display: inline-block;"><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="https://www.google.com">  <i class="fas fa-envelope" ></i></a></li>
+                    
+                    </ul>
+                    
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+            </div> 
+    </div>
+    </div>      
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<style>
+#map{
+	width: 80%;
+	height: 500px;
+}
+
+</style>
+
+</head>
+<body>
+<section id="don" class="bg-dark" style=" padding: 20px;color: rgb(238, 236, 236);">
+  <div class="container" >
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;font-size: x-large; margin-top: 20px;">Look For Donors.</h2>
+        <p>Type something in the input field to search the table for names, blood groups or place of residence:</p>  
+        <input id='myInput' onkeyup='searchTable()' type='text' style="width:100%;border: 2px solid #c57070;
+        border-radius: 4px;">
+        <br>
+        <br>
+        <table id='myTable' class="table table-bordered table-striped" style=" border:#c57070;font-family:'Times New Roman', Times, serif; color:rgb(224, 222, 222)">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Blood Group</th>
+                  <th>City of Residence</th>
+                  <th>Age</th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Tiger Nixon</td>
+                  <td>O+ve</td>
+                  <td>Chennai</td>
+                  <td>41</td>
+                </tr>
+              <tr>
+                  <td>Garrett Winters</td>
+                  <td>A-ve</td>
+                  <td>Delhi</td>
+                  <td>23</td>
+              </tr>
+              <tr>
+                  <td>Ashton Cox</td>
+                  <td>B+ve</td>
+                  <td>Mumbai</td>
+                  <td>46</td>
+              </tr>
+              <tr>
+                  <td>Cedric Kelly</td>
+                  <td>AB-ve</td>
+                  <td>Kolkata</td>
+                  <td>22</td>
+              </tr>
+              <tr>
+                  <td>Airi Satou</td>
+                  <td>A+ve</td>
+                  <td>Mumbai</td>
+                  <td>33</td>
+              </tr>
+              <tr>
+                  <td>Brielle Williamson</td>
+                  <td>B+ve</td>
+                  <td>Chennai</td>
+                  <td>21</td>
+              </tr>
+              <tr>
+                  <td>Herrod Chandler</td>
+                  <td>O+ve</td>
+                  <td>Delhi</td>
+                  <td>59</td>
+              </tr>
+              <tr>
+                  <td>Rhona Davidson</td>
+                  <td>O+ve</td>
+                  <td>Chennai</td>
+                  <td>55</td>
+                </tr>
+              <tr>
+                  <td>Colleen Hurst</td>
+                  <td>A+ve</td>
+                  <td>Telangana</td>
+                  <td>39</td>
+              </tr>
+              <tr>
+                  <td>Sonya Frost</td>
+                  <td>B+ve</td>
+                  <td>Mumbai</td>
+                  <td>23</td>
+              </tr>
+              <tr>
+                  <td>Jena Gaines</td>
+                  <td>O_ve</td>
+                  <td>Pune</td>
+                  <td>30</td>
+              </tr>
+              <tr>
+                  <td>Quinn Flynn</td>
+                  <td>B+ve</td>
+                  <td>Mumbai</td>
+                  <td>22</td>
+              </tr>
+              <tr>
+                  <td>Charde Marshall</td>
+                  <td>AB+ve</td>
+                  <td>Chennai</td>
+                  <td>36</td>
+              </tr>
+              <tr>
+                  <td>Haley Kennedy</td>
+                  <td>A+ve</td>
+                  <td>Kolkata</td>
+                  <td>43</td>
+              </tr>
+              <tr>
+                  <td>Tatyana Fitzpatrick</td>
+                  <td>O+ve</td>
+                  <td>Delhi</td>
+                  <td>19</td>
+              </tr>
+              <tr>
+                  <td>Michael Silva</td>
+                  <td>B-ve</td>
+                  <td>Mumbai</td>
+                  <td>36</td>
+              </tr>
+              <tr>
+                  <td>Paul Byrd</td>
+                  <td>A+ve</td>
+                  <td>Delhi</td>
+                  <td>64</td>
+              </tr>
+              <tr>
+                  <td>Gloria Little</td>
+                  <td>A+ve</td>
+                  <td>Mumbai</td>
+                  <td>59</td>
+              </tr>
+              <tr>
+                  <td>Bradley Greer</td>
+                  <td>B+ve</td>
+                  <td>Chennai</td>
+                  <td>41</td>
+              </tr>
+              <tr>
+                  <td>Dai Rios</td>
+                  <td>A-ve</td>
+                  <td>Mumbai</td>
+                  <td>35</td>
+              </tr>
+              <tr>
+                  <td>Lael Greer</td>
+                  <td>AB+ve</td>
+                  <td>Delhi</td>
+                  <td>21</td>
+              </tr>
+              <tr>
+                  <td>Jonas Alexander</td>
+                  <td>O+ve</td>
+                  <td>Chennai</td>
+                  <td>30</td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+      </div>
+  </div>
+</section>
+
+<script>
+function searchTable() {
+    var input, filter, found, table, tr, td, i, j;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+            }
+        }
+        if (found) {
+            tr[i].style.display = "";
+            found = false;
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
+}
+  </script>
+
+
+<div id="bb" class="col-lg-8 mx-auto"  >
+  <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;font-size: x-large; margin: 20px;padding-left: 45px;">Nearby Blood Banks</h2>
+<div class="container" id="map" style="margin: 30px ; padding-bottom: 30px; margin-left: 100px; ">
+</div>
+</div>
+<div id="info_div"></div>
+
+<script>
+function initMap() {
+var myMapCenter = {lat: 13.0827, lng: 80.2707};
+
+// Create a map object and specify the DOM element for display.
+var map = new google.maps.Map(document.getElementById('map'), {
+center: myMapCenter,
+zoom: 14
+});
+
+
+function markStore(storeInfo){
+
+// Create a marker and set its position.
+var marker = new google.maps.Marker({
+map: map,
+position: storeInfo.location,
+title: storeInfo.name
+});
+
+// show store info when marker is clicked
+marker.addListener('click', function(){
+showStoreInfo(storeInfo);
+});
+}
+
+// show store info in text box
+function showStoreInfo(storeInfo){
+var info_div = document.getElementById('info_div');
+info_div.innerHTML = 'Store name: '
++ storeInfo.name
++ '<br>Hours: ' + storeInfo.hours;
+}
+
+var stores = [
+{
+name: 'Lions Blood Bank',
+location: {lat: 13.069877, lng: 80.260916},
+hours: '8AM to 10PM'
+},
+{
+name: 'Red-Cross Blood Bank - Egmore Chennai',
+location: {lat: 13.066689, lng: 80.259714},
+hours: '9AM to 9PM'
+},
+{
+name: 'Lions Blood Bank',
+location: {lat: 13.082406, lng: 80.276794},
+hours: '8AM to 10PM'
+},
+{
+    name:'Chennai Port Trust Bank',
+    location:{lat:13.087506,lng:80.291814},
+    hours: '9AM to 9PM'
+}
+];
+
+stores.forEach(function(store){
+markStore(store);
+});
+
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5ASHeTFVM2lvRGqnPc4D6v8BPs2IgQEU&callback=initMap" async defer></script>
+
+
+<section id="becdon" class="bg-dark" style=" padding: 20px;color: #eeeaea; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;font-size: x-large; margin-top: 20px;">Become A Donor.</h2>
+        <p class="font-family:'Times New Roman', Times, serif; font-size: large; text-align: center; margin:25px">There are several parameters that determine the eligibility of an individual to donate blood. Guidelines laid down by the Ministry of Health, Government of India have to be followed by blood banks and organizations conducting blood donation camps.
+        <ul class="font-family:'Times New Roman', Times, serif; font-size: large; text-align: center; margin:25px">
+        <li>  Overall health- The donor must be fit and healthy, and should not be suffering from transmittable diseases.</li>
+        <li>  Age and weight- The donor must be 18–65 years old and should weigh a minimum of 50  kg.</li>
+        <li>  Pulse rate- Between 50 and 100 without irregularities.</li>
+        <li>  Hemoglobin level- A minimum of 12.5 g/dL.</li>
+        <li>  Blood pressure- Diastolic: 50–100 mm Hg, Systolic: 100–180 mm Hg.</li>
+        <li>  Body temperature- Should be normal, with an oral temperature not exceeding 37.5 °C.</li>
+        <li>  The time period between successive blood donations should be more than 3 months.</li>
+        </ul>
+        </p>
+        <br>
+        <div class="butts" style="margin-left: 150px;">
+        <button type="button" style="background-color: #e24d4d; margin-right: 150px; border: 1px solid rgb(248, 36, 36);"class="btn btn-info btn-md" data-toggle="modal" data-target="#login">Already A Donor?</button>
+            <!-- Modal -->
+            <div id="login" class="modal fade" >
+              <div class="modal-dialog modal-login">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                   <div class="avatar">
+                     <img src="./man.png">
+                   </div>
+                    <h4 class="modal-title">Login</h4><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                      </div>        
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+            <button type="button" style="background-color: #e24d4d; border: 1px solid rgb(248, 36, 36);"class="btn btn-info btn-md" data-toggle="modal" data-target="#signup">Become A Donor?</button>
+            <!-- Modal -->
+            <div id="signup" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-signup">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="avatar">
+                      <img src="./woman.png">
+                    </div>
+                    <h4 class="modal-title">Become A Donor</h4><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="firstname" placeholder="First Name" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="lastname" placeholder="Last Name" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="number" class="form-control" name="mobile" placeholder="Mobile Number" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name=" blood" placeholder="Blood Group" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="abc@example.com" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="residence" placeholder="City Of Residence" required="required">		
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="diseases" placeholder="Any disease?...If yes please specify." required="required">		
+                      </div>
+                      <div class="label1">
+                        <div class="h"><label for="g">Gender</label></div>
+                        </div>
+                        <div class="ggg">
+                         <input type="radio" id="male1" name="gender" value="male">
+                          <label for="male">Male</label>
+                          <input type="radio" id="female1" name="gender" value="female">
+                          <label for="female">Female</label>
+                          <input type="radio" id="other1" name="gender" value="other">
+                          <label for="other">Other</label>
+                        </div>
+                      
+                      <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="********" required="required">	
+                      </div>        
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Sign Up</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>   
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+        
+<section id="contact" style="font-family: 'Times New Roman', Times, serif; font-weight: normal;">
+          <div class="foot">
+          <div class="mail" >
+            <ul>
+              <li><a href="#"class="btn-floating btn-lg btn-li" type="button" role="button" style="color:rgb(43, 41, 41)" ><i class="fas fa-map-marker-alt">     35B Adhyan Chs, Chennai</i>  </a></li>
+              <li><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:rgb(43, 41, 41)" > <i class="fas fa-phone" >     +91-8765433980</i> </a></li>
+              <li><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:rgb(43, 41, 41)" >  <i class="fas fa-envelope" >     contactus@bepositive.com </i></a></li>
+           
+            </ul>
+      
+          </div>
+          <div class="logo" style="margin: 20px;font-family: 'Times New Roman', Times, serif; ">
+             <p class="about" style="font-weight: bold;font-size: 25px;">About Us</p><br>
+            <div class="para"><p> B ve+ is an mobile application based organisation that works
+              on providing people with blood in case on emergency, fastly and efficiently
+              through its connectivity not only with nearby blood banks but also with the <br> 
+              available users itself.
+      
+            </p></div><br>
+            <div class="logo1">
+            <ul>
+              <li><a href="#"class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="https://www.facebook.com"><i class="fab fa-facebook"></i>  </a></li>
+              <li><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="https://www.twitter.com"> <i class="fab fa-twitter" style="color: #e24d4d;"> </i> </a></li>
+              <li><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="tel:+91-8765433980"> <i class="fab fa-whatsapp" style="color: #e24d4d;"></i> </a></li>
+              <li><a href="#" class="btn-floating btn-lg btn-li" type="button" role="button" style="color:#e24d4d" href="https://www.google.com">  <i class="fas fa-envelope" ></i></a></li>
+            
+            </ul>
+                   </div>  
+          
+      
+          </div>
+      
+      
+      
+        </div>
+      
+      
+</section>
+        
+<style>
+  .foot{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px;
+  
+  }		
+  
+
+  
+  .mail ul li{
+  list-style: none;
+  padding-bottom: 20px;
+  
+  }
+  
+  .mail ul{
+  margin-top:  50px;
+  
+  }
+  .logo1 ul li{
+  
+  display:inline;
+  list-style: none;
+  margin: 15px; 
+  
+  
+  }
+    
+</style>      
+
+
+
+</body>
+
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+</html>
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+	<title>Donate Now</title>
+
+<style>
+	
+.dd{
+	max-width: 100%;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.dd fieldset{
+	border: none;
+}
+.dd legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.dd label {
+	display: block;
+	margin-bottom: 8px;
+}
+.dd input[type="text"],
+
+.dd input[type="email"],
+
+.dd textarea,
+.dd select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.dd input[type="text"]:focus,
+
+.dd input[type="email"]:focus,
+
+.dd textarea:focus,
+.dd select:focus{
+	background: #d2d9dd;
+}
+.dd select{
+	-webkit-appearance: menulist-button;
+	height:10px;
+}
+.dd .number {
+	background: #ff6666;
+	color: #fff;
+	height: 30px;
+	width: 80px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.dd input[type="submit"],
+.dd input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #ff6666;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid  #ff6666;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.dd input[type="submit"]:hover,
+.dd input[type="button"]:hover
+{
+	background:#990000 ;
+}
+
+.label11{
+margin-top: 70px;
+
+}
+
+.ggg{
+	display: inline;
+
+}
+input[type="radio"]{
+   float: left;
+   width: auto;
+   margin-left: 3em;
+}
+
+.h{
+	margin-top: 40px;
+}
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+	<div class="dd">
+	<form>
+		<fieldset>
+			<legend><span class="number">B+ve</span> Donor Information</legend>
+		<div class="label1">
+			<label for="fname">First Name</label><br>
+		</div>
+		<div class="input1">
+		 <input type="text" id="fname1" name="firstname" placeholder="Enter First Name">
+		</div>
+		<div class="label1">
+			<label for="lname">Last Name</label><br>
+		</div>
+		<div class="input1">
+		 <input type="text" id="lname1" name="lastname" placeholder="Enter Last Name">
+		</div>
+<div class="label1">
+			<label for="Blood">Blood Group</label><br>
+		</div>
+<div class="input1">
+	<select id="grouplist">
+    <option>A Positive</option>
+    <option>A Negative</option>
+    <option>A Unknown</option>
+    <option>B Positive</option>
+    <option>B Negative</option>
+    <option>B Unknown</option>
+    <option>AB Positive</option>
+    <option>AB Negative</option>
+    <option>AB Unknown</option>
+    <option>O Positive</option>
+    <option>O Negative</option>
+    <option>O Unknown</option>
+    <option>Unknown</option>
+</select>
+
+</div>
+
+<div class="label1">
+			<label for="mobile">Mobile No.</label><br>
+		</div>
+<div class="input1">
+		 <input type="text" id="mobile1" name="mobile" >
+		</div>
+<div class="label1">
+			<label for="email">E-mail</label><br>
+</div>
+<div class="input1">
+ <input id='email1'
+         name='email'
+         type='email'
+         placeholder='joe@example.com'/>
+
+</div>
+<div class="label1">
+<div class="h"><label for="g">Gender</label></div><br>
+</div>
+<div class="ggg">
+ <input type="radio" id="male1" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female1" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other1" name="gender" value="other">
+  <label for="other">Other</label>
+</div>
+<div class="label11">
+	<label for="add">Address</label>
+</div>
+
+<div class="input1">
+<textarea id="add1" name="address" placeholder="Write Full Address.." style="height:200px"></textarea>
+</div>
+ 
+<div class="label1">
+	<label for="dis">Any Disease?...If any please specify!</label>
+</div>
+<div class="input1">
+		 <input type="text" id=dis1 name="disease" >
+		</div>
+
+
+<div class="label1">
+	<label for="ques">Do you wish to donate blood regularly for children suffering from thalassemia?</label>
+</div>
+<div class="input1">
+	<select id="ques1">
+		<option>Yes</option>
+		<option>No</option>
+
+	</select>
+
+</div>
+ <div class="sub">
+    <input type="submit" value="Submit">
+  </div>
+</fieldset>
+	</form>
+
+</div>
+</body>
+
+
+</html>
